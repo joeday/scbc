@@ -6,7 +6,7 @@
 // typography
 $sans:								"Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serif:								"Charter", Georgia, "Times New Roman", Times, serif !default;
-$mono:								Courier, "prestige-elite-std";
+$slab:								Courier, "prestige-elite-std";
 $base_font_size:			20px;
 
 // colors
@@ -36,21 +36,26 @@ h1 {
 }
 
 h2 {
-	font-family: $sans;
-	font-weight: 100;
-	font-size: 3.2em; // 64px
-	letter-spacing: -2px;
-}
-
-h3 {
+//	font-family: $sans;
+//	font-weight: 100;
+//	font-size: 3.2em; // 64px
+//	letter-spacing: -2px;
 	font-family: $sans;
 	font-weight: 300;
 	font-size: 2.4em; // 48px
 	letter-spacing: -2px;
 }
 
-h4 {
+h3 {
 	font-family: $sans;
+	font-weight: bold;
+	font-size: 1.4em; // 28px
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-family: $slab;
 	font-weight: bold;
 	font-size: 1.4em; // 28px
 	letter-spacing: -1px;
@@ -73,6 +78,18 @@ h5 {
 
 .white {
 	color: $scbc_white;
+}
+
+.slab {
+	font-family: $slab;
+}
+
+.small {
+	font-size: .8em;
+}
+
+.centered {
+	text-align: center;
 }
 
 /////////////
@@ -107,9 +124,20 @@ h5 {
 	}
 }
 
-
-
-.hero {
+#hero,
+#services,
+#contact {
 	background: $scbc_black;
 	color: $scbc_white;
+	padding: 0 0 3em 0;
+	p {
+		font-family: $slab;
+		font-size: .6em;
+	}
+}
+
+#give {
+	background: $scbc_white;
+	color: $scbc_black;
+	padding: 0 0 3em 0;
 }
