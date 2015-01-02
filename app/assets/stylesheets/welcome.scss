@@ -1,3 +1,115 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+///////////////
+// variables //
+///////////////
+
+
+// typography
+$sans:								"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serif:								"Charter", Georgia, "Times New Roman", Times, serif !default;
+$mono:								Courier, "prestige-elite-std";
+$base_font_size:			20px;
+
+// colors
+$scbc_black: #222;
+$scbc_white: #fff;
+
+
+//////////////
+// elements //
+//////////////
+
+body {
+  font-size: $base_font_size;
+	line-height: ($base_font_size*1.4);
+  font-family: $serif;
+  color: $scbc_black;
+  margin: 0;
+  padding: 0;
+  background: $scbc_white;
+}
+
+h1 {
+	font-family: $sans;
+	font-weight: bold;
+	font-size: 3.6em; // 72px
+	letter-spacing: -2px;
+}
+
+h2 {
+	font-family: $sans;
+	font-weight: 100;
+	font-size: 3.2em; // 64px
+	letter-spacing: -2px;
+}
+
+h3 {
+	font-family: $sans;
+	font-weight: 300;
+	font-size: 2.4em; // 48px
+	letter-spacing: -2px;
+}
+
+h4 {
+	font-family: $sans;
+	font-weight: bold;
+	font-size: 1.4em; // 28px
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-family: $serif;
+	font-weight: bold;
+	font-size: 1.4em; // 28px
+}
+
+//////////////////////
+// ultility classes //
+//////////////////////
+
+.black { 
+	color: $scbc_black;
+}
+
+.white {
+	color: $scbc_white;
+}
+
+/////////////
+// classes //
+/////////////
+
+.navbar-default {
+	background: none;
+	border: none;
+	a:hover.navbar-brand {
+		color: $scbc_white;
+	}
+	.navbar-nav {
+		float: right;
+	}
+	.navbar-brand,
+	.navbar-nav {
+		font-size: .8em;
+		font-family: $sans;
+		font-weight: bold;
+		color: white;
+		li {
+			a {
+				font-family: $sans;
+				font-weight: bold;
+				color: white;
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+
+
+.hero {
+	background: $scbc_black;
+	color: $scbc_white;
+}
