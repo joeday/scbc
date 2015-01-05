@@ -30,8 +30,31 @@
     .row
       .col-md-6
         .map
+          iframe frameborder="0" height="320" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2681.3644857824524!2d-122.29919100000001!3d47.77438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490103e93698a19%3A0x8f361367dfa27387!2sSound+City+Bible+Church!5e0!3m2!1sen!2sus!4v1420421412679" style="border:0" width="555" 
       .col-md-6
-        h3 Service Times
+        .service_times_wrapper.clearfix
+          h2 Service Times
+          .service_time
+            | 9
+            .ampm am / kids
+          .service_time
+            | 11
+            .ampm am / kids
+          .service_time
+            | 5
+            .ampm pm
+        hr
+        a.vcard href="https://goo.gl/maps/utZh5" target="_blank"
+          .adr
+            .title
+              | Address
+            .street-address 
+              | 2800 NE 200th ST
+            .locality 
+              | Shoreline, WA 
+            .postal-code 
+              | 98155
+        
 
 .container-fluid#give
   .container
@@ -40,6 +63,8 @@
         h1.centered Giving
       .col-md-6.col-md-offset-3
         p.slab.small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+        p.centered
+          a.btn.btn-default.give_btn href="#" Give Now
 
 .container-fluid#contact
   .container

@@ -43,7 +43,7 @@ h2 {
 	font-family: $sans;
 	font-weight: 300;
 	font-size: 2.4em; // 48px
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 }
 
 h3 {
@@ -92,6 +92,20 @@ h5 {
 	text-align: center;
 }
 
+.btn-default {
+	font-family: $sans;
+	font-weight: bold;
+	color: $scbc_black;
+	border-radius: 0;
+	background: $scbc_white;
+	border: 1px solid $scbc_black;
+	font-size: 1.4em;
+	padding: .5em 1.5em;
+	&:hover {
+		background: $scbc_white;
+	}
+}
+
 /////////////
 // classes //
 /////////////
@@ -127,7 +141,7 @@ h5 {
 #hero,
 #services,
 #contact {
-	background: $scbc_black;
+	background-color: $scbc_black;
 	color: $scbc_white;
 	padding: 0 0 3em 0;
 	p {
@@ -139,5 +153,81 @@ h5 {
 #give {
 	background: $scbc_white;
 	color: $scbc_black;
-	padding: 0 0 3em 0;
+	padding: 3em 0;
+}
+
+.give_btn {
+	display: inline-block;
+	margin-top: 1em;
+}
+
+#hero {
+	background-image: url('jwaftg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#services {
+	padding: 3em 0;
+}
+
+.service_time {
+	font-family: $sans;
+	font-size: 3em;
+	font-weight: bold;
+	color: $scbc_white;
+	float: left;
+	margin: .6em 1em 0 0;
+	color: #999;
+	.ampm {
+		font-size: .2em;
+		font-weight: normal;
+		float: right;
+		margin: 19px 0 0 5px;
+	}
+}
+
+a.vcard {
+	font-family: $slab;
+	font-size: .6em;
+	text-decoration: none;
+	color: $scbc_white;
+	line-height: 15px;
+	&:hover {
+		text-decoration: none;
+	}
+	.title {
+		font-weight: bold;
+		text-transform: uppercase;
+		display: block;
+	}
+	.street-address {
+		font-weight: normal;
+		display: block;		
+	}
+	.locality {
+		font-weight: normal;
+		display: inline-block;
+	}
+	.postal-code {
+		font-weight: normal;
+		display: inline-block;
+		margin-left: 6px;
+	}
+}
+
+.map {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 35px;
+	height: 0;
+	overflow: hidden;
+	iframe {
+		position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
 }
